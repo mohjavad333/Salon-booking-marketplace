@@ -1,0 +1,128 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+   *
+   * Brand: "نوبتو" — a beauty & barbershop booking marketplace.
+   * Primary = raspberry/rose (energetic, beauty-industry), Accent = warm gold.
+  */
+  :root {
+    --background: 30 33% 98%;
+    --foreground: 340 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 15% 12%;
+
+    --primary: 341 78% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 32 45% 94%;
+    --secondary-foreground: 340 25% 18%;
+
+    --muted: 30 20% 94%;
+    --muted-foreground: 340 8% 45%;
+
+    --accent: 38 92% 55%;
+    --accent-foreground: 340 30% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 89%;
+    --input: 30 20% 89%;
+    --ring: 341 78% 48%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 341 78% 48%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 341 78% 48%;
+  }
+
+  .dark {
+    --background: 340 25% 7%;
+    --foreground: 30 20% 96%;
+
+    --card: 340 22% 10%;
+    --card-foreground: 30 20% 96%;
+
+    --popover: 340 22% 10%;
+    --popover-foreground: 30 20% 96%;
+
+    --primary: 341 78% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 18% 16%;
+    --secondary-foreground: 30 20% 96%;
+
+    --muted: 340 18% 16%;
+    --muted-foreground: 30 10% 65%;
+
+    --accent: 38 92% 55%;
+    --accent-foreground: 340 30% 14%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 18% 18%;
+    --input: 340 18% 18%;
+    --ring: 341 78% 55%;
+    --sidebar-background: 340 25% 9%;
+    --sidebar-foreground: 30 20% 92%;
+    --sidebar-primary: 341 78% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 340 18% 16%;
+    --sidebar-accent-foreground: 30 20% 92%;
+    --sidebar-border: 340 18% 18%;
+    --sidebar-ring: 341 78% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01";
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
