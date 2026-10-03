@@ -175,7 +175,7 @@ The repo includes `netlify.toml` and `netlify/functions/api.ts`, so the client c
 ## Author
 
 **Mohammad Javad Rezaei**
-GitHub: [@ymohjavad333](https://github.com/mohjavad333/Salon-booking-marketplace)
+GitHub: [@mohjavad333](https://github.com/mohjavad333/Salon-booking-marketplace)
 
 
 
